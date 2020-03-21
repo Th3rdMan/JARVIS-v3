@@ -1,13 +1,20 @@
 const Discord = require("discord.js");
+const cron = require("node-cron");
+const express = require("express");
+const fs = require("fs");
+const app = express();
 const { TOKEN, PREFIX } = require("./config.js");
 const bot = new Discord.Client();
 bot.PREFIX = PREFIX;
 bot.commands = new Discord.Collection();
 
 bot.on("message", message => require("./events/message.js")(bot, message));
+bot.on("ready", () => require("./events/guerre.js")(bot, fs, cron, app));
 
 bot.commands.set("inter", require("./cmd/inter.js"));
 bot.commands.set("cpf", require("./cmd/cpf.js"));
+
+bot.commands.set("ordre", require("./cmd/ordre.js"));
 
 bot.commands.set("capas", require("./cmd/game/capas.js"));
 bot.commands.set("capa", require("./cmd/game/capas.js"));
