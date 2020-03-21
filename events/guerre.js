@@ -25,16 +25,10 @@ module.exports = (bot, fs, cron, app) => {
         .setImage(
           "https://cdn.discordapp.com/attachments/561270477952385037/670624314667696128/ab00006.png"
         );
-      // Salon Guerre
-      bot.channels
-        .get("602292589298974760")
-        .send(war)
-        .catch(console.error);
-      // Salon Briefing
-      bot.channels
-        .get("494818944490930176")
-        .send(war)
-        .catch(console.error);
+      const guerre = bot.channels.cache.get("602292589298974760");
+      const briefing = bot.channels.cache.get("494818944490930176");
+      guerre.send(war).catch(console.error);
+      briefing.send(war).catch(console.error);
     },
     {
       scheduled: true,
@@ -63,16 +57,10 @@ module.exports = (bot, fs, cron, app) => {
         .setImage(
           "https://cdn.discordapp.com/attachments/561270477952385037/670625245891264531/5jm0008.png"
         );
-      // Salon Guerre
-      bot.channels
-        .get("602292589298974760")
-        .send(gday)
-        .catch(console.error);
-      // Salon Briefing
-      bot.channels
-        .get("494818944490930176")
-        .send(gday)
-        .catch(console.error);
+      const guerre = bot.channels.cache.get("602292589298974760");
+      const briefing = bot.channels.cache.get("494818944490930176");
+      guerre.send(gday).catch(console.error);
+      briefing.send(gday).catch(console.error);
     },
     {
       scheduled: true,
@@ -101,16 +89,10 @@ module.exports = (bot, fs, cron, app) => {
         .setImage(
           "https://cdn.discordapp.com/attachments/561270477952385037/670625697483718706/5gm0008.png"
         );
-      // Salon Guerre
-      bot.channels
-        .get("602292589298974760")
-        .send(rush)
-        .catch(console.error);
-      // Salon Briefing
-      bot.channels
-        .get("494818944490930176")
-        .send(rush)
-        .catch(console.error);
+      const guerre = bot.channels.cache.get("602292589298974760");
+      const briefing = bot.channels.cache.get("494818944490930176");
+      guerre.send(rush).catch(console.error);
+      briefing.send(rush).catch(console.error);
     },
     {
       scheduled: true,
