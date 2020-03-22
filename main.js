@@ -15,6 +15,7 @@ bot.commands.set("inter", require("./cmd/inter.js"));
 bot.commands.set("cpf", require("./cmd/cpf.js"));
 
 bot.commands.set("ordre", require("./cmd/ordre.js"));
+bot.commands.set("freerun", require("./cmd/freerun.js"));
 bot.commands.set("u6", require("./cmd/raids/u6.js"));
 bot.commands.set("u7", require("./cmd/raids/u7.js"));
 bot.commands.set("gamma", require("./cmd/raids/gamma.js"));
@@ -70,11 +71,11 @@ process.on("unhandledRejection", error => {
 bot.on("ready", () => {
   bot.user.setPresence({ activity: { name: "se développer" }, status: "idle" });
   console.log(`
------██╗-█████╗-██████╗-██╗---██╗██╗███████╗----██████╗-----██████╗-
+-----██╗-█████╗-██████╗-██╗---██╗██╗███████╗----██████╗-----██████╗
 -----██║██╔══██╗██╔══██╗██║---██║██║██╔════╝----╚════██╗---██╔═████╗
 -----██║███████║██████╔╝██║---██║██║███████╗-----█████╔╝---██║██╔██║
 ██---██║██╔══██║██╔══██╗╚██╗-██╔╝██║╚════██║-----╚═══██╗---████╔╝██║
 ╚█████╔╝██║--██║██║--██║-╚████╔╝-██║███████║----██████╔╝██╗╚██████╔╝
--╚════╝-╚═╝--╚═╝╚═╝--╚═╝--╚═══╝--╚═╝╚══════╝----╚═════╝-╚═╝-╚═════╝-
+-╚════╝-╚═╝--╚═╝╚═╝--╚═╝--╚═══╝--╚═╝╚══════╝----╚═════╝-╚═╝-╚═════╝
 `);
 });
