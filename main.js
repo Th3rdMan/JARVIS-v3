@@ -9,13 +9,11 @@ bot.PREFIX = PREFIX;
 bot.commands = new Discord.Collection();
 
 bot.on("message", message => require("./events/message.js")(bot, message));
+
 bot.on("ready", () => require("./events/guerre.js")(bot, fs, cron, app));
-
-bot.commands.set("inter", require("./cmd/inter.js"));
-bot.commands.set("cpf", require("./cmd/cpf.js"));
-
 bot.commands.set("ordre", require("./cmd/ordre.js"));
 bot.commands.set("freerun", require("./cmd/freerun.js"));
+
 bot.commands.set("u6", require("./cmd/raids/u6.js"));
 bot.commands.set("u7", require("./cmd/raids/u7.js"));
 bot.commands.set("gamma", require("./cmd/raids/gamma.js"));
@@ -60,6 +58,12 @@ bot.commands.set("s6", require("./cmd/game/capas/s6.js"));
 bot.commands.set("tec", require("./cmd/game/capas/tec.js"));
 bot.commands.set("wak", require("./cmd/game/capas/wak.js"));
 bot.commands.set("xme", require("./cmd/game/capas/xme.js"));
+
+bot.commands.set("inter", require("./cmd/inter.js"));
+bot.commands.set("cpf", require("./cmd/cpf.js"));
+bot.commands.set("don", require("./cmd/don.js"));
+bot.commands.set("8ball", require("./cmd/8ball.js"));
+bot.commands.set("dice", require("./cmd/dice.js"));
 
 bot.login(TOKEN);
 bot.on("error", console.error);
