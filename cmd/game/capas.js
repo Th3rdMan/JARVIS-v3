@@ -48,7 +48,7 @@ module.exports = async (client, message) => {
         var response = collected.first();
         var choix = String.prototype.toLowerCase.apply(response);
         client.commands.get(choix)(client, message);
-        message.delete(1000);
+        message.delete();
       });
   });
 

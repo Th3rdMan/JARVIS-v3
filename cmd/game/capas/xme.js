@@ -5,7 +5,10 @@ module.exports = async (client, message) => {
     .setTitle(`__Capacités Oranges__ de l'équipe des __X-Men__`)
     .setDescription(
       `<:st:626353634547859456> **Team Optimale**
-      Phénix - Colossus - Wolverine - Psylocke - Tornade`
+      __Résiliente :__ Phénix - Colossus - Wolverine - Psylocke - Tornade
+      __Mixte :__ Phénix - Colossus - Cyclope - Psylocke - Tornade
+      __Agressive :__ Phénix - Colossus - Wolverine - Cyclope - Tornade
+      __Hyperagressive :__ Phénix - Psylocke - Wolverine - Cyclope - Tornade`
     )
     .setThumbnail(
       "http://marvelheroes.info/img/items/hd/armor_wolverine_mask.png"
