@@ -1,4 +1,4 @@
-module.exports = async (client, message) => {
+module.exports = async (bot, message) => {
   const { MessageEmbed } = require("discord.js");
   let Authorid = message.author.id;
   const capas = new MessageEmbed()
@@ -47,7 +47,7 @@ module.exports = async (client, message) => {
       .then(collected => {
         var response = collected.first();
         var choix = String.prototype.toLowerCase.apply(response);
-        client.commands.get(choix)(client, message);
+        client.commands.get(choix)(bot, message);
         message.delete();
       });
   });

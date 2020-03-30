@@ -1,4 +1,4 @@
-module.exports = async (client, message) => {
+module.exports = async (bot, message) => {
   const { MessageEmbed } = require("discord.js");
   const g14 = new MessageEmbed()
     .setColor("#ECC120")

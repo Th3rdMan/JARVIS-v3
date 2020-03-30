@@ -10,7 +10,7 @@ module.exports = async (bot, message) => {
     );
 
   const fing = moment()
-    .add(26, "h")
+    .add(25, "h")
     .format(`dddd à H`);
 
   const gamma = new MessageEmbed()

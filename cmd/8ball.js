@@ -30,7 +30,7 @@ module.exports = async (bot, message, args) => {
   let response = randomItem(responses);
   let question = args.join(" ");
   message.channel.send(
-    `> ${message.author} vient de poser une question :\n> *${question}*\n \n :8ball: | **${response}**`
+    `> ${message.author} vient de me poser une question :\n> *${question}*\n \n :8ball: Ma réponse | **${response}**`
   );
 };
 

@@ -16,6 +16,7 @@ bot.commands.set("freerun", require("./cmd/freerun.js"));
 
 bot.commands.set("u6", require("./cmd/raids/u6.js"));
 bot.commands.set("u7", require("./cmd/raids/u7.js"));
+bot.commands.set("alpha", require("./cmd/raids/alpha.js"));
 bot.commands.set("gamma", require("./cmd/raids/gamma.js"));
 
 bot.commands.set("capas", require("./cmd/game/capas.js"));
