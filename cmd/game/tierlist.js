@@ -10,10 +10,10 @@ module.exports = async (bot, message) => {
       "http://marvelheroes.info/img/power/icon/hd/power_ultron_slam.png"
     )
     .setImage(
-      "https://cdn.discordapp.com/attachments/509477853021077514/673821657160220672/3_8_2_Tier_List.png"
+      "https://cdn.discordapp.com/attachments/529597051005042698/696025621003763732/image0.jpg"
     )
     .setFooter(
-      `Mise à jour du 03/02/2020`,
+      `Mise à jour du 04/04/2020`,
       `https://static-cdn.jtvnw.net/jtv_user_pictures/7b3e4ffd-ce6a-4630-b255-711c7e001dd0-profile_image-70x70.png`
     );
 

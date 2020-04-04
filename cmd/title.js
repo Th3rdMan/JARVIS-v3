@@ -1,10 +1,9 @@
-module.exports = async (bot, message, args) => {
-  let title = args.join(" ");
-  message.channel.send(
-    `> ${message.author} vient de me poser une question :\n> *${question}*\n \n :8ball: Ma réponse | **${response}**`
-  );
-};
+module.exports = async (Discord, message) => {
+  const { MessageEmbed } = require("discord.js");
+  const title = new MessageEmbed()
+    .setColor("#4C4C4C")
+    .setImage("https://zupimages.net/up/20/14/oedy.png")
+    .setFooter(message.author.username, message.author.displayAvatarURL());
 
-exports.info = {
-  name: "title"
+  message.channel.send(title);
 };

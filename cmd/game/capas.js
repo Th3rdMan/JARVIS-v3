@@ -47,7 +47,7 @@ module.exports = async (bot, message) => {
       .then(collected => {
         var response = collected.first();
         var choix = String.prototype.toLowerCase.apply(response);
-        client.commands.get(choix)(bot, message);
+        bot.commands.get(choix)(bot, message);
         message.delete();
       });
   });

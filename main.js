@@ -65,6 +65,8 @@ bot.commands.set("cpf", require("./cmd/cpf.js"));
 bot.commands.set("don", require("./cmd/don.js"));
 bot.commands.set("8ball", require("./cmd/8ball.js"));
 bot.commands.set("dice", require("./cmd/dice.js"));
+bot.commands.set("titre", require("./cmd/title.js"));
+bot.commands.set("title", require("./cmd/title.js"));
 
 bot.login(TOKEN);
 bot.on("error", console.error);

@@ -12,10 +12,10 @@ module.exports = async (bot, message) => {
       "http://marvelheroes.info/img/power/icon/hd/power_beast_teslatower.png"
     )
     .setImage(
-      `https://cdn.discordapp.com/attachments/555468204999311384/684090004607074315/image0.jpg`
+      `https://cdn.discordapp.com/attachments/509477853021077514/694737479630061570/uniques310.png`
     )
     .setFooter(
-      `Mise à jour du 02/03/2020`,
+      `Mise à jour du 01/04/2020`,
       `https://www.zupimages.net/up/20/06/zdcp.png`
     );
 
