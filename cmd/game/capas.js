@@ -1,4 +1,4 @@
-module.exports = async (bot, message) => {
+module.exports = async (bot, message, PREFIX) => {
   const { MessageEmbed } = require("discord.js");
   let Authorid = message.author.id;
   const capas = new MessageEmbed()
@@ -35,16 +35,16 @@ module.exports = async (bot, message) => {
       true
     )
     .setThumbnail("http://marvelheroes.info/img/items/hd/item_art252.png");
-  const filter = response => {
+  const filter = (response) => {
     return response.author.id === Authorid;
   };
-  message.channel.send(capas).then(function() {
+  message.channel.send(capas).then(function () {
     message.channel
-      .awaitMessages(response => message.content, {
+      .awaitMessages((response) => message.content, {
         filter,
-        max: 1
+        max: 1,
       })
-      .then(collected => {
+      .then((collected) => {
         var response = collected.first();
         var choix = String.prototype.toLowerCase.apply(response);
         bot.commands.get(choix)(bot, message);
@@ -53,6 +53,6 @@ module.exports = async (bot, message) => {
   });
 
   exports.help = {
-    name: "capas"
+    name: "capas",
   };
 };

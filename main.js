@@ -8,15 +8,18 @@ const bot = new Discord.Client();
 bot.PREFIX = PREFIX;
 bot.commands = new Discord.Collection();
 
-bot.on("message", message => require("./events/message.js")(bot, message));
+bot.on("message", (message) => require("./events/message.js")(bot, message));
 
 bot.on("ready", () => require("./events/guerre.js")(bot, fs, cron, app));
 bot.commands.set("ordre", require("./cmd/ordre.js"));
 bot.commands.set("freerun", require("./cmd/freerun.js"));
 
+bot.commands.set("menu", require("./cmd/menu.js"));
+
 bot.commands.set("u6", require("./cmd/raids/u6.js"));
 bot.commands.set("u7", require("./cmd/raids/u7.js"));
 bot.commands.set("alpha", require("./cmd/raids/alpha.js"));
+bot.commands.set("beta", require("./cmd/raids/beta.js"));
 bot.commands.set("gamma", require("./cmd/raids/gamma.js"));
 
 bot.commands.set("capas", require("./cmd/game/capas.js"));
@@ -68,10 +71,12 @@ bot.commands.set("dice", require("./cmd/dice.js"));
 bot.commands.set("titre", require("./cmd/title.js"));
 bot.commands.set("title", require("./cmd/title.js"));
 
+//bot.commands.set("first", require("./cmd/first.js"));
+
 bot.login(TOKEN);
 bot.on("error", console.error);
 bot.on("warn", console.warn);
-process.on("unhandledRejection", error => {
+process.on("unhandledRejection", (error) => {
   console.log("ERREUR : ", error);
 });
 

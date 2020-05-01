@@ -9,16 +9,14 @@ module.exports = async (bot, message) => {
       `Désolé ${message.author.username} mais vous n'avez pas la permission de lancer un raid !`
     );
 
-  const fina = moment()
-    .add(25, "h")
-    .format(`dddd à H`);
+  const fina = moment().add(26, "h").format(`dddd à H`);
 
   const alpha = new MessageEmbed()
     .setColor("#892ca6")
     .setTitle("Nouveau raid lancé")
     .setAuthor("Raid Alpha", "https://zupimages.net/up/20/06/1rll.png")
     .setDescription(
-      "__Un score final inférieur à **60%**__ sera considéré comme un **échec** !"
+      "__Un score final inférieur à **80%**__ sera considéré comme un **échec** !"
     )
     .setThumbnail("https://www.zupimages.net/up/20/06/fkww.png")
     .addField(
@@ -35,5 +33,5 @@ module.exports = async (bot, message) => {
 };
 
 exports.help = {
-  name: "alpha"
+  name: "alpha",
 };

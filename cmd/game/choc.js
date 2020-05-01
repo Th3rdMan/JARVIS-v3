@@ -11,10 +11,10 @@ module.exports = async (bot, message) => {
       "http://marvelheroes.info/img/power/icon/hd/power_deadpool_giantmallet.png"
     )
     .setImage(
-      `https://cdn.discordapp.com/attachments/509477853021077514/674462958658650112/Unique_S2W_Blitz_Teams_3_8_2.png`
+      `https://cdn.discordapp.com/attachments/509477853021077514/701636987689631794/Unique_S2W_Blitz_Teams_3_10_2.png`
     )
     .setFooter(
-      `Mise à jour du 05/02/2020`,
+      `Mise à jour du 20/04/2020`,
       `https://static-cdn.jtvnw.net/jtv_user_pictures/7b3e4ffd-ce6a-4630-b255-711c7e001dd0-profile_image-70x70.png`
     );
 

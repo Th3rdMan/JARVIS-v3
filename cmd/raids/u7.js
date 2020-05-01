@@ -9,9 +9,7 @@ module.exports = async (bot, message) => {
       `Désolé ${message.author.username} mais vous n'avez pas la permission de lancer un raid !`
     );
 
-  const finu7 = moment()
-    .add(26, "h")
-    .format(`dddd à H`);
+  const finu7 = moment().add(26, "h").format(`dddd à H`);
 
   const u7 = new MessageEmbed()
     .setColor("#FAAB23")
@@ -21,7 +19,7 @@ module.exports = async (bot, message) => {
       "https://www.bluemoongame.com/wp-content/uploads/2019/09/Ultimus-ultimat.png"
     )
     .setDescription(
-      "__N'oubliez pas que **tout le monde** a son rôle à jouer pour atteindre le **30%** !__"
+      "__N'oubliez pas que **tout le monde** a son rôle à jouer pour atteindre le **60%** !__"
     )
     .setThumbnail(
       "http://marvelheroes.info/img/power/icon/hd/power_jeangrey_phoenixtransform.png"
@@ -29,7 +27,7 @@ module.exports = async (bot, message) => {
     .addField(
       "**Bonne chance combattants, on compte sur vous !**",
       `Placez-vous sur vos lignes respectives dès que possible et faites vos premiers combats rapidement afin de pouvoir gérer au mieux vos énergies en fin de raid. 
-L'objectif reste que chacun arrive à faire __3 ou 4 nœuds__. On reste concentré sur ses combats, on garde un œil sur le timer et tout devrait bien se passer !\n\n**Fin du raid prévu pour ${finu7}h !**`
+L'objectif reste que chacun arrive jusqu'au moins jusqu'au second mini-boss. On communique, on s'organise en groupe et tout devrait bien se passer !\n\n**Fin du raid prévu pour ${finu7}h !**`
     )
     .setTimestamp()
     .setFooter(message.author.username, message.author.displayAvatarURL());
@@ -41,5 +39,5 @@ L'objectif reste que chacun arrive à faire __3 ou 4 nœuds__. On reste concentr
 };
 
 exports.help = {
-  name: "u7"
+  name: "u7",
 };
