@@ -12,16 +12,16 @@ module.exports = async (bot, message) => {
       "http://marvelheroes.info/img/power/icon/hd/power_beast_gluebomb.png"
     )
     .setImage(
-      `https://cdn.discordapp.com/attachments/555468204999311384/694978804589920296/miniuniques310.png`
+      `https://cdn.discordapp.com/attachments/555468204999311384/708341930148364381/Miniuniques400.png`
     )
     .setFooter(
-      `Mise à jour du 01/04/2020`,
+      `Mise à jour du 08/05/2020`,
       `https://www.zupimages.net/up/20/06/zdcp.png`
     );
 
   message.channel.send(g14);
 
   exports.help = {
-    name: "g14"
+    name: "g14",
   };
 };

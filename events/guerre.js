@@ -49,7 +49,7 @@ module.exports = (bot, fs, cron, app) => {
           "https://cdn.discordapp.com/attachments/561270477952385037/670627201397555210/4qe0009.png"
         )
         .setDescription(
-          "Comme tous les samedi, c'est détente ! Pas de directive, pas d'ordre. Vous n'avez que l'obligation de faire vos 8 attaques habituelles *(vous pouvez même facilement tirer jusqu'à 8)*. Profitez-en pour vous entraîner ! Faîtes des tests d'équipes, osez prendre un risque ou deux.\n Mais choisissez bien vos cibles, si la victoire est possible **ne lui tournez pas le dos** ! Et profitez de votre week-end !\n C'est __GRIVAR DAY__ !"
+          "Comme tous les samedi, c'est détente ! Pas de directive, pas d'ordre. Vous n'avez que l'obligation de faire vos 8 attaques habituelles. Profitez-en pour vous entraîner ! Faîtes des tests d'équipes, osez prendre un risque ou deux.\n Mais choisissez bien vos cibles, si la victoire est possible **ne lui tournez pas le dos** ! Et profitez de votre week-end !\n C'est __GRIVAR DAY__ !"
         )
         .setThumbnail(
           "https://cdn.discordapp.com/attachments/561270477952385037/670729683855343649/e6b0001.png"

@@ -5,7 +5,6 @@ module.exports = async (bot, message) => {
       `Désolé ${message.author.username} mais vous n'avez pas la permission d'utiliser cette commande !`
     );
 
-  console.log("Freerun lancé");
   const freerun = new MessageEmbed()
     .setColor("#8B0000")
     .setTitle("__Freerun__")

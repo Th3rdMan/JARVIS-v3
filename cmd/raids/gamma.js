@@ -10,9 +10,9 @@ module.exports = async (bot, message, args) => {
       `Désolé ${message.author.username} mais vous n'avez pas la permission de lancer un raid !`
     );
 
-  const fing = moment().add(24, "h").format(`dddd à H`);
+  const fing = moment().add(26, "h").format(`dddd à H`);
 
-  if (objectif === undefined) {
+  if (objectif != 30 && objectif != 60 && objectif != 100) {
     message.author
       .send(`⚠️ Pour lancer le raid Gamma, merci de préciser un objectif :\n
     --> **${bot.PREFIX}gamma 30/60/100**\n`);
@@ -22,15 +22,15 @@ module.exports = async (bot, message, args) => {
 
   if (objectif === "100") {
     objectif = "100%";
-    img = "https://zupimages.net/up/20/18/wze8.png";
+    img = "https://zupimages.net/up/20/18/2r96.png";
   }
   if (objectif === "60") {
     objectif = "60%";
-    img = "https://zupimages.net/up/20/18/nm94.png";
+    img = "https://zupimages.net/up/20/18/9y8s.png";
   }
   if (objectif === "30") {
     objectif = "30%";
-    img = "https://zupimages.net/up/20/18/lidj.png";
+    img = "https://zupimages.net/up/20/18/h2yk.png";
   }
 
   const gamma = new MessageEmbed()

@@ -9,9 +9,7 @@ module.exports = async (bot, message) => {
       `Désolé ${message.author.username} mais vous n'avez pas la permission de lancer un raid !`
     );
 
-  const finu6 = moment()
-    .add(23, "h")
-    .format(`dddd à H`);
+  const finu6 = moment().add(26, "h").format(`dddd à H`);
 
   const u6 = new MessageEmbed()
     .setColor("#FAAB23")
@@ -40,5 +38,5 @@ module.exports = async (bot, message) => {
 };
 
 exports.help = {
-  name: "u6"
+  name: "u6",
 };
