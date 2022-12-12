@@ -16,7 +16,7 @@
     "console-stamp": "^0.2.9",
     "discord": "^0.8.2",
     "discord.js": "^12.2.0",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "fs": "0.0.1-security",
     "git-all": "0.0.3",
     "moment": "^2.25.3",
